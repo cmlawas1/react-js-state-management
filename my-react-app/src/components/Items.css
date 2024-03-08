@@ -1,0 +1,102 @@
+.flex-body {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* contains layout for the cards portion */
+
+#items-list {
+    width:70%;
+    max-width: 70%;
+    margin-right: 0%;
+}
+
+/* contains item cards that is flexible with screen dimensions */
+.cards-container {
+    display:flex;
+    padding:1%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+/* item card container */
+.item-container {
+    width: 20%;
+    background-color: rgb(255, 215, 238);
+    margin: 0.5%;
+    padding: 0.5%;
+    min-width: 20%;
+    max-width: 25%;
+}
+
+.item-pic {
+    width:100%;
+    height:auto;
+    aspect-ratio: 1;
+    object-fit:cover;
+}
+
+.item-name {
+    font-weight: bolder;
+}
+
+button {
+    cursor:pointer;
+    border: 1px solid #cd2381;
+    border-radius: 4px;
+    background-color: #cd2381;
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 0;
+    transition: all .2s ease-in;
+}
+
+/* changes color when cursor hovers over button */
+button:hover {
+    background-color: #ff87c9;
+    border: 1px solid #ff87c9;
+}
+
+/* cart portion of css */
+h2 {
+    font-family: serif;
+}
+
+.cart-contents {
+    display: flex;
+    flex-direction: column;
+    width:21%;
+    max-width: 21%;
+    margin-right: 4%;
+    margin-left:1%;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 215, 238);
+    padding: 5%;
+    margin: 2%;
+    margin-left: 0%;
+    justify-content: space-between;
+}
+
+.cart-item-name {
+    display: flex;
+    justify-content: flex-start;
+    font-size:large;
+    flex-grow: 1;
+}
+
+.item-quantity {
+    font-size: medium;
+    margin-left: auto;
+    margin-right: 0.5em;
+}
+
+.delete-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

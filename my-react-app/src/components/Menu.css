@@ -1,0 +1,39 @@
+/* contains layout for the Menu / Header portion */
+
+span {
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 1%;
+    transition: all .2s ease-in;
+}
+
+/* changes background color when hovered over */
+a:hover {
+    background-color: white;
+}
+
+#sitename {
+    justify-content: flex-start; 
+    margin-right:auto;
+    margin-left:3%;
+    font-family: serif;
+}
+
+.flex-option-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 215, 238);
+    align-items: center;
+}
+
+.option-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5%;
+}
+
